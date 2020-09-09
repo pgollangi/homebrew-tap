@@ -2,16 +2,16 @@
 class Fastget < Formula
   desc "A open source cli tool to ultra fast download files over HTTP(S)."
   homepage "https://github.com/pgollangi/fastget"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "http://github.com/pgollangi/fastget/releases/download/v0.1.0/fastget_0.1.0_macOS_amd64.tar.gz"
-    sha256 "14fa0899e8cddb53765b00984354cc02de8b3d60cec66cc3ec866435b4b7289a"
+    url "http://github.com/pgollangi/fastget/releases/download/v0.2.0/fastget_0.2.0_macOS_amd64.tar.gz"
+    sha256 "83cbc7f0ab129194c6de74337a04f24e14666f701829bd1009aed862d56c3825"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "http://github.com/pgollangi/fastget/releases/download/v0.1.0/fastget_0.1.0_linux_amd64.tar.gz"
-      sha256 "bb83eb3d813d96cb744b05ac8ef28afd51fdcfb4de4388bb783c168f0237ff57"
+      url "http://github.com/pgollangi/fastget/releases/download/v0.2.0/fastget_0.2.0_linux_amd64.tar.gz"
+      sha256 "9ba18242cad62dfcd85ef2d021d252a8ba436c98ca7eb5bf12c0bac54e9497c3"
     end
   end
 
