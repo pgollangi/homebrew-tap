@@ -8,17 +8,17 @@ class Fireql < Formula
   version "0.1.3"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "http://github.com/pgollangi/FireQL/releases/download/v0.1.3/fireql_Darwin_x86_64.tar.gz"
-      sha256 "ca74bcd43a8afeda3429e78ec8f717a8cf23a99b529856500bc808b872276e51"
+    if Hardware::CPU.arm?
+      url "http://github.com/pgollangi/FireQL/releases/download/v0.1.3/fireql_Darwin_arm64.tar.gz"
+      sha256 "90c21626e14f11e8edb5d1f4fcfbb130b2e52aa99a4af32495f0f3d6228332ff"
 
       def install
         bin.install "bin/fireql"
       end
     end
-    if Hardware::CPU.arm?
-      url "http://github.com/pgollangi/FireQL/releases/download/v0.1.3/fireql_Darwin_arm64.tar.gz"
-      sha256 "96221813518d11cc834ac86c054f0ac1ca4d2ce2000ce48e4957bbe56f4c9ad8"
+    if Hardware::CPU.intel?
+      url "http://github.com/pgollangi/FireQL/releases/download/v0.1.3/fireql_Darwin_x86_64.tar.gz"
+      sha256 "e7eb334afe9ff0265e8d9b9326a03cb94b0d513ee37e9db1c5deb8da966fd00c"
 
       def install
         bin.install "bin/fireql"
@@ -29,7 +29,7 @@ class Fireql < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "http://github.com/pgollangi/FireQL/releases/download/v0.1.3/fireql_Linux_x86_64.tar.gz"
-      sha256 "1178451aa245e24c6d6c629d17be3cff49dd5b2432bb2944b89567b3ac277c29"
+      sha256 "72bfdcace41f977d050e5f6aca965a869e7bbba9dcf62be5255a90bab0515689"
 
       def install
         bin.install "bin/fireql"
@@ -37,7 +37,7 @@ class Fireql < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "http://github.com/pgollangi/FireQL/releases/download/v0.1.3/fireql_Linux_arm64.tar.gz"
-      sha256 "b2a0b73dc524c7895c5fc1f3a38e26b95daf7b4f55b36579396e0b6cb1f90efc"
+      sha256 "914c2b25319c0f008abb1fcbaaa9e63c482f47a28352dd57117456206bd96cd7"
 
       def install
         bin.install "bin/fireql"
