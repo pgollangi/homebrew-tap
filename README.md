@@ -13,3 +13,9 @@ This repository contains my homebrew formulae.
   ```sh
   brew install pgollangi/tap/fastget
   ```
+
+* [fireql](https://github.com/pgollangi/fireql)
+
+  ```sh
+  brew install pgollangi/tap/fireql
+  ```
