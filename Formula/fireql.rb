@@ -5,20 +5,20 @@
 class Fireql < Formula
   desc "Query Google Firestore database using SQL syntax."
   homepage "https://github.com/pgollangi/FireQL"
-  version "0.2.2"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "http://github.com/pgollangi/FireQL/releases/download/v0.2.2/fireql_Darwin_x86_64.tar.gz"
-      sha256 "d61e4a0825852dba94d77e422df3c1918e6104ee8f53357fff68389c6e3a6183"
+      url "http://github.com/pgollangi/FireQL/releases/download/v0.3.0/fireql_Darwin_x86_64.tar.gz"
+      sha256 "9d06a72fb8086d64df54e8ea77057f949e81899f6a696a23859d4bb83bed1f25"
 
       def install
         bin.install "fireql"
       end
     end
     if Hardware::CPU.arm?
-      url "http://github.com/pgollangi/FireQL/releases/download/v0.2.2/fireql_Darwin_arm64.tar.gz"
-      sha256 "a85fa124264105195e0460868a8c32d67019defe8052a97eafd737400855906f"
+      url "http://github.com/pgollangi/FireQL/releases/download/v0.3.0/fireql_Darwin_arm64.tar.gz"
+      sha256 "c2926361956baa1b51eebdfec87c324da1d46551e659e7c0258f9d864bcf04a6"
 
       def install
         bin.install "fireql"
@@ -28,16 +28,16 @@ class Fireql < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/pgollangi/FireQL/releases/download/v0.2.2/fireql_Linux_arm64.tar.gz"
-      sha256 "55e712f6a739912fadd66afb7af3548960df01e421bc63f1a01d040d5cdecb7a"
+      url "http://github.com/pgollangi/FireQL/releases/download/v0.3.0/fireql_Linux_arm64.tar.gz"
+      sha256 "2ed007203e83273a86f27d8ee83fc5a7098a29a85b88da10543386c5c7cbdfd0"
 
       def install
         bin.install "fireql"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/pgollangi/FireQL/releases/download/v0.2.2/fireql_Linux_x86_64.tar.gz"
-      sha256 "c9dd21fdc8cf9dab888c907d8ef25337650502a19ca6ad8ef59199cdcaeafdca"
+      url "http://github.com/pgollangi/FireQL/releases/download/v0.3.0/fireql_Linux_x86_64.tar.gz"
+      sha256 "96bc7d1044f960ff269e346e2fb2cbe1d92e3975206a3bbad7e4468ac4690a45"
 
       def install
         bin.install "fireql"
